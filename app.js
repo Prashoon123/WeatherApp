@@ -1,4 +1,4 @@
-const APP_ID = "4e37f8b62d902930c305918453b619f3"
+const APP_ID = "4e37f8b62d902930c305918453b619f3";
 
 const button = document.querySelector(".button");
 const inputValue = document.querySelector(".inputValue");
@@ -13,7 +13,9 @@ button.addEventListener("click", function (e) {
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       inputValue.value +
-      "&appid=" + APP_ID + "&units=metric"
+      "&appid=" +
+      APP_ID +
+      "&units=metric"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -21,9 +23,6 @@ button.addEventListener("click", function (e) {
       let tempValue = data["main"]["temp"];
       let descriptionValue = data["weather"][0]["description"];
 
-      // name.innerHTML = nameValue;
-      temp.innerHTML = tempValue + "°C";
-      description.innerHTML = descriptionValue;
       if (tempValue <= 10.99) {
         image.setAttribute("src", "./images/frost.png");
       } else if (tempValue <= 20.99 && tempValue >= 11) {
@@ -33,6 +32,9 @@ button.addEventListener("click", function (e) {
       } else if (tempValue <= 40.99 && tempValue >= 31) {
         image.setAttribute("src", "./images/hot.png");
       }
+      // name.innerHTML = nameValue;
+      temp.innerHTML = tempValue + "°C";
+      description.innerHTML = descriptionValue;
     })
 
     .catch((err) => alert("Wrong city name!"));
