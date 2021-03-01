@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  color: white;
+}
+
+.input {
+  text-align: center;
+  margin: 100px 0px;
+}
+
+input {
+  height: 50px;
+  width: 600px;
+  background: #e7e7e7;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 10px;
+  outline-width: 0;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  background: black;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  outline-width: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.display {
+  text-align: center;
+}
+
+.description {
+  font-size: 50px;
+}
+
+.temp {
+  font-size: 50px;
+}
+
+.image {
+  height: 100px;
+}
