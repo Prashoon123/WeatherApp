@@ -25,16 +25,25 @@ button.addEventListener("click", function (e) {
 
       if (tempValue <= 10.99) {
         image.setAttribute("src", "./images/frost.png");
+        // name.innerHTML = nameValue;
+        temp.innerHTML = tempValue + "°C";
+        description.innerHTML = descriptionValue;
       } else if (tempValue <= 20.99 && tempValue >= 11) {
         image.setAttribute("src", "./images/cold.png");
+        // name.innerHTML = nameValue;
+        temp.innerHTML = tempValue + "°C";
+        description.innerHTML = descriptionValue;
       } else if (tempValue <= 30.99 && tempValue >= 21) {
         image.setAttribute("src", "./images/humid.png");
+        // name.innerHTML = nameValue;
+        temp.innerHTML = tempValue + "°C";
+        description.innerHTML = descriptionValue;
       } else if (tempValue <= 40.99 && tempValue >= 31) {
         image.setAttribute("src", "./images/hot.png");
+        // name.innerHTML = nameValue;
+        temp.innerHTML = tempValue + "°C";
+        description.innerHTML = descriptionValue;
       }
-      // name.innerHTML = nameValue;
-      temp.innerHTML = tempValue + "°C";
-      description.innerHTML = descriptionValue;
     })
 
     .catch((err) => alert("Wrong city name!"));
