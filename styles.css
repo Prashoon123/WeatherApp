@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  text-align: center;
+  margin: 100px 0px;
+}
+
+input {
+  height: 50px;
+  width: 600px;
+  background: #e7e7e7;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 10px;
+  outline-width: 0;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  background: black;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  outline-width: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.display {
+  text-align: center;
+  color: black;
+  width: 400px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 10px;
+}
+
+.description {
+  font-size: 50px;
+}
+
+.temp {
+  font-size: 50px;
+}
+
+.image {
+  height: 100px;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
