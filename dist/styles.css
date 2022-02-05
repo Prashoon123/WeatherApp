@@ -7,12 +7,14 @@
 body {
   font-family: "Nunito", sans-serif;
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-  background-repeat: no-repeat;
   color: white;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .input {
@@ -80,5 +82,29 @@ button:hover {
   }
   50% {
     opacity: 0.85;
+  }
+}
+
+@media (max-width: 705px) {
+  body {
+    height: 100%;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  .display {
+    width: 300px;
+  }
+}
+
+@media (max-width: 401px) {
+  input {
+    width: 300px;
   }
 }
